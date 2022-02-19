@@ -1,0 +1,267 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Griffy', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.app{
+    background-color: aliceblue;
+    height: 95vh;
+    border-radius: 10px;
+    overflow: scroll;
+    position: relative;
+}
+.app::-webkit-scrollbar{
+    width: 5px;
+}
+.app::-webkit-scrollbar-track{
+   background-color: #075E54;
+ 
+}
+.app::-webkit-scrollbar-thumb{
+    background-color: #254e50;
+  
+ }
+header{
+    background-color: #128C7E;
+    /* height: 20%; */
+    width: 100%;
+}
+
+.logo{
+height: 50px;
+display: flex;
+}
+.search{
+flex: 1  0  25%;
+text-align: center;
+}
+.search i{
+margin-left: 5px;
+}
+.title{
+flex: 1 0  75%;
+}
+.navb{
+width: 100%;
+display: flex;
+}
+.camira{
+    position: relative;
+    display: block;
+    width:15%;
+    text-align: center;
+}
+.camira i{
+}
+.navb ul{
+  width:85%;
+  /* flex-grow:  4; */
+  display: block;
+  display: flex;
+
+ 
+}
+
+.navb ul li{
+flex-grow: 1;
+text-align: center;
+}
+.navb ul li a{
+color: white;
+display: block;
+}
+
+.navb ul li a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.navb ul li a.active{
+ border-bottom: 3px solid  white;
+}
+
+.block{
+    display: flex;
+  
+}
+.img-parent{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.img-parent img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+border: 1px solid black;
+}
+.img-parent img.active{
+ border: 2px dashed green;
+    }
+.block .info{
+    width: 90%;
+    border-bottom: 1px solid rgb(221, 219, 219);
+  
+}
+.mystatus{
+    position: relative;
+}
+.mystatus::after{
+    content: "+";
+    position: absolute;
+    right: -5px;
+    width: 15;
+    height: 15;
+    top: 60%;
+    background-color: green;
+    color: white;
+    line-height: 7px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+section{
+    display: none;
+}
+
+.wh.active{
+    display: block;
+}
+.ball{
+    position: absolute;
+    bottom: 30px;
+    right: 8px;
+    width: 35px;
+    height: 35px;
+    background-color: #075E54;
+    display: none;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px gray ;
+    cursor: pointer;
+}
+
+.ball div {
+  width: 100%;
+  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+
+.ball.active{
+    display: block;
+}
+.ball-camera{
+    bottom: 80px; 
+    
+}
+.ball-cam{
+    cursor: pointer;
+}
+.ball-pen{
+    bottom: 30px; 
+    display: block;
+}
+
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.slider img{
+    width: 25%;
+    height: 75px;
+    border: 1px solid rgb(18, 143, 91);
+}
+
+
+.status-slider{
+    display: none;
+}
+.content{
+    position: relative;
+}
+.photo{
+    display: none;
+}
+.photo.select{
+display: block;
+width: 100%;
+height: 100%;
+border-radius: 0;
+
+}
+
+.blok-chats.select{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    
+    }
+
+.start-chat{
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+
+}
+
+.start-chat .ch{
+height: 80%;
+}
+.start-chat .massge{
+    height: 20%; 
+    display: flex;
+    justify-content: space-between;  
+  
+}
+.start-chat.disply{
+    display: block;
+}
+
+.start-chat .massge .parent-input{
+    width: 85%;  
+    height: 40px;
+    position: relative; 
+    padding: 5px;
+ 
+    margin: 5px 5px 3px 2px;
+    border-radius: 20px;
+
+}
+
+.start-chat .massge span{
+    width: 15%; 
+    padding: 5px;
+    height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+.start-chat .massge .parent-input input{
+    padding: 5px;
+    border-radius: 20px;
+    outline: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
